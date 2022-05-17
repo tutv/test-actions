@@ -4,6 +4,8 @@ jobs:
   test-deploy:
     runs-on: self-hosted
     steps:
+      - name: CD
+        run: cd ${{ github.workspace }}
       - name: Install dependencies
         run: yarn install
       - name: Start app

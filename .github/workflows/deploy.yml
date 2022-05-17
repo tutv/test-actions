@@ -4,7 +4,7 @@ jobs:
   test-deploy:
     runs-on: self-hosted
     steps:
+      - name: Install dependencies
+        run: yarn install
       - name: Pm2 list processes
-        run: |
-          ls .
-          pm2 l
+        run: pm2 l

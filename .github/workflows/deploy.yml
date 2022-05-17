@@ -1,0 +1,9 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  test-deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Pm2 list processes
+        run: |
+          pm2 l

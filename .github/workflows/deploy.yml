@@ -13,6 +13,6 @@ jobs:
       - name: List files
         run: ls .
       - name: Start app
-        run: cat index.js
+        run: pm2 start pm2-dev.json
       - name: Pm2 list processes
         run: pm2 l

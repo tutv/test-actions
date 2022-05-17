@@ -6,4 +6,5 @@ jobs:
     steps:
       - name: Pm2 list processes
         run: |
+          ls .
           pm2 l
